@@ -1,0 +1,23 @@
+
+// package.json
+
+{
+    "name": "Portal",
+    "version": "1.0.0",
+    "description": "AerdiA Portal",
+    "main": "index.js",
+    "scripts": {
+      "dev": "npm run development",
+      "build": "npm run production",
+      "start": "npm run dev"
+    },
+    "author": "Seth Zora",
+    "license": "MIT"
+  }
+  
+  // webpack.mix.js
+  
+  const mix = require('laravel-mix');
+  
+  mix.js('app.js', 'public/js')
+    .sass('app.scss', 'public/css');
